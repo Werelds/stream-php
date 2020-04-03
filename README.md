@@ -115,7 +115,7 @@ $data = [
         'distance'=> 10,
     ],
     'participants' => ['Thierry', 'Tommaso'],
-    'started_at' => new DateTime('now', new DateTimeZone('Pacific/Nauru'),
+    'started_at' => new DateTime('now', new DateTimeZone('Pacific/Nauru')),
 ];
 
 // Add an activity and push it to other feeds too using the `to` field
@@ -228,7 +228,7 @@ Also see documention on the [users endpoint](https://getstream.io/docs/php/#user
 
 $user = $client->users()->add('42');
 
-$user =  $client->users()->update('42', array('name' => 'Arthur Dent');
+$user =  $client->users()->update('42', array('name' => 'Arthur Dent'));
 
 $client->users()->delete('42');
 
